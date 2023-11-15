@@ -23,7 +23,7 @@ input1Box.addEventListener("keydown", function(e) {
     }
   });
 
-const url = 'https://v6.exchangerate-api.com/v6/0390f6050f9e581193820c28';
+const url = 'https://v6.exchangerate-api.com/v6/ea43075f3f5facdf5053e5d6';
 let d=document.createElement("p")
 let t=document.createElement("p")
 let from=document.querySelector(".f").textContent
