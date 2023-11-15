@@ -31,7 +31,8 @@
             <p class="m">EUR</p>
             </div>
             <div class="last1">
-                <input class="inp1" type="number" onkeydown="return event.keyCode !== 69">
+                <input class="inp1" type="number" onkeydown="return event.keyCode !== 69"
+                onkeypress="return event.keyCode === 8 || event.charCode >= 48 && event.charCode <= 57">
             </div>
         </section>
         <section class="second">
