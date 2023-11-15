@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: Roboto;
+}
+header{
+    background-color: gainsboro;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 50px;
+    padding: 0px 80px;
+}
+li:first-child{
+    color: black !important;
+}
+li{
+    list-style-type: none;
+    color: gray
+}
+button{
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+    width: 58px;
+    height: 33px;
+}
+img{
+    width: 89px;
+    height: 23px;
+    margin-top: 10px;
+}
+h1{
+    margin: 30px 0px;
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+}
+main{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.first , .second{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin-left:  30px;
+width: 530px;
+}
+.money{
+    display: flex;
+    flex-wrap: wrap;
+}
+#w{ width: 50%;
+    border: none;
+    margin-bottom: 5px;
+    text-align: start;
+    color: gray
+}
+.m , .n{
+    border: 1px solid gray;
+    border-radius: 1px;
+    width: 65px;
+    height: 28px;
+    text-align: center;
+}
+.last1 , .last2{
+    border: 1px solid gray;
+    border-radius: 3px;
+    width: 50%;
+    height: 150px;
+    margin-top: 20px;
+}
+input{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 70%;
+    font-size: 50px;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance:none;
+    margin: 0;
+}
+.active , .actived{
+    color: white;
+    background-color: blueviolet;
+}

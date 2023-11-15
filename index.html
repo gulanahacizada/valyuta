@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valyuta konvertoru tərtibatı</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="./image2/Asset 1@3x 1.svg" alt="bank">
+        <li>БАНК</li>
+        <li>БИЗНЕС</li>
+        <li>ИНВЕСТИЦИИ</li>
+        <li>СТРАХОВАНИЕ</li>
+        <li>МОБАЙЛ</li>
+        <li>ПУТЕШЕСТВИЯ</li>
+        <li>РАЗВЛЕЧЕНИЯ</li>
+        <button>ВОЙТИ</button>
+    </header>
+    <main>
+        <h1>Конвертер валют онлайн</h1>
+        <br>
+        <section class="first">
+            <p id="w">У меня есть</p>
+            <br>
+            <div class="money">
+            <p class="m f active">RUB</p>
+            <p class="m">AZN</p>
+            <p class="m">USD</p>
+            <p class="m">EUR</p>
+            </div>
+            <div class="last1">
+                <input class="inp1" type="number" onkeydown="return event.keyCode !== 69">
+            </div>
+        </section>
+        <section class="second">
+            <p id="w">Хочу приобрести</p>
+            <br>
+            <div class="money">
+            <p class="n">RUB</p>
+            <p class="n">AZN</p>
+            <p class="n s actived">USD</p>
+            <p class="n">EUR</p>
+            </div>
+            <div class="last2">
+                <input class="inp2" type="number" onkeydown="return event.keyCode !== 69">
+            </div>
+        </section>
+    </main>
+    <script src="./app.js"></script>
+</body>
+</html>
