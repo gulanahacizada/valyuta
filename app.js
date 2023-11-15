@@ -5,7 +5,7 @@ let p1=document.querySelectorAll(".m")
 let p2=document.querySelectorAll(".n")
 let inp1=document.querySelector(".inp1")
 let inp2=document.querySelector(".inp2")
-const url = 'https://v6.exchangerate-api.com/v6/46bfce3b7e121ed3a43c8c02';
+const url = 'https://v6.exchangerate-api.com/v6/00df6f3a7025d8ecb4415ff2';
 let d=document.createElement("p")
 let t=document.createElement("p")
 
@@ -60,14 +60,16 @@ p1.forEach(a=>{
         const b2=inp1.value*a2;
         inp2.value=b2.toFixed(4);
         p11.innerText=`1${from}=${a2}${to}`
-        div1.append(p11)
-})
+        div1.append(p11)})
+        .catch(err=>console.error(err))
         fetch(`${url}/pair/${to}/${from}/${inp2.value}`)
         .then(res=>res.json())
         .then(data=>{
         const a2=data.conversion_rate;
         p22.innerText=`1${to}=${a2}${from}`
         div2.append(p22)})
+        .catch(err=>console.error(err))
+        
         p2.forEach(b=>{
             b.addEventListener("click",()=>{
                     if(b.classList.contains("actived")){
@@ -89,14 +91,15 @@ p1.forEach(a=>{
         const b2=inp1.value*a2;
         inp2.value=b2.toFixed(4);
         p11.innerText=`1${from}=${a2}${to}`
-        div1.append(p11)
-})
+        div1.append(p11)})
+        .catch(err=>console.error(err))
         fetch(`${url}/pair/${to}/${from}/${inp2.value}`)
         .then(res=>res.json())
         .then(data=>{
         const a2=data.conversion_rate;
         p22.innerText=`1${to}=${a2}${from}`
         div2.append(p22)})
+        .catch(err=>console.error(err))
          })
 })
     })
@@ -123,19 +126,22 @@ p2.forEach(b=>{
         const b2=inp2.value*a2;
         inp1.value=b2.toFixed(4);
         p22.innerText=`1${to}=${a2}${from}`
-        div2.append(p22)
-})      
+        div2.append(p22)})   
+        .catch(err=>console.error(err))   
        fetch(`${url}/pair/${from}/${to}/${inp1.value}`)
        .then(res=>res.json())
        .then(data=>{
        const a2=data.conversion_rate;
        p11.innerText=`1${from}=${a2}${to}`
        div1.append(p11)})
+       .catch(err=>console.error(err))
+
         p1.forEach(a=>{
             a.addEventListener("click",()=>{
                 if(a.classList.contains("active")){
                     a.classList.remove("active")
                 }
+                a.classList.add("active")
         from=document.querySelector(".active").textContent
         p11.style.color="gray"
         p22.style.color="gray"
@@ -150,14 +156,15 @@ p2.forEach(b=>{
         const b2=inp2.value*a2;
         inp1.value=b2.toFixed(4);
         p22.innerText=`1${to}=${a2}${from}`
-        div2.append(p22)
-})      
+        div2.append(p22)}) 
+        .catch(err=>console.error(err))     
        fetch(`${url}/pair/${from}/${to}/${inp1.value}`)
        .then(res=>res.json())
        .then(data=>{
        const a2=data.conversion_rate;
        p11.innerText=`1${from}=${a2}${to}`
        div1.append(p11)})
+       .catch(err=>console.error(err))
          })
 })
     })
