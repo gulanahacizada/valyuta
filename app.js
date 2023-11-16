@@ -7,6 +7,7 @@ let inp1=document.querySelector(".inp1")
 let inp2=document.querySelector(".inp2")
 let input1Box = document.getElementById("input1Box");
 let input2Box = document.getElementById("input2Box");
+
 let invalidChars = [
   "-",
   "+",
@@ -23,7 +24,7 @@ input1Box.addEventListener("keydown", function(e) {
     }
   });
 
-const url = 'https://v6.exchangerate-api.com/v6/ea43075f3f5facdf5053e5d6';
+const url = 'https://v6.exchangerate-api.com/v6/25cfa0835f8586d1f10b84ed';
 let d=document.createElement("p")
 let t=document.createElement("p")
 let from=document.querySelector(".f").textContent
